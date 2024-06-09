@@ -2,26 +2,31 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
+    	<meta name="description" content="Allows people to save their favorite books">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>The Books Collection</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-
-		<h1>Which Pokemon?</h1>
-		<input name="" value="">
-		<button type="button" name="button">Get Pokemon</button>
-
-		<h2>Name?</h2>
-		<img src="img/pokemon.jpeg" alt="">
-		<iframe src="" frameborder="0"></iframe>
-		<h3>Type?</h3>
-
-		<script type="text/javascript" src="js/main.js"></script>
+		<h1>A List Of Your Favorite Books</h1>
+		<form action="/books" method="POST">
+			<input type="text" placeholder="author" name="author" />
+			<input type="text" placeholder="books" name="books" />
+			<button type="submit">Submit</button>
+		</form>
+		<div id="message"></div>
+  
+  <div>
+    <h2>Delete Books</h2>
+    <p>
+      Delete some books you no longer favorite Does nothing if there are no more books.
+    </p>
+    <button id="delete-button">Delete Book</button>
+  </div>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

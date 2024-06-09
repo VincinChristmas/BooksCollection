@@ -1,0 +1,20 @@
+{
+  "name": "bookscollection",
+  "version": "1.0.0",
+  "description": "the start of a new app that will use apis from openlibrary.org. I am not sure of the purpose of the new app yet, but I am jumpstarting it here to get started on the code later.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
